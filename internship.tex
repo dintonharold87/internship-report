@@ -2,6 +2,7 @@
 \renewcommand{\baselinestretch}{1.5}
 \setcounter{tocdepth}{3}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage[nottoc,notlot,notlof]{tocbibind}
 \usepackage{tabu}
 \usepackage{hyperref}
@@ -51,9 +52,7 @@ Field Supervisor \makebox[3.0in][r]{Signature}\\
 \vspace{.1in}
 \makebox[2.5in]{\hrulefill} \hspace{0.3in}\makebox[2.5in]{\dotfill}\\
 Academic Supervisor \makebox[2.5in][r]{Signature}\\
-
 \newpage
-
 \textbf{Acknowledgment}\\
 The special thanks goes to my helpful supervisor \textbf{Mr.Willy Nuwamanya},(Senior Manager Billing \& IT). The supervision and support that he gave truly helped in the progression and smoothness of the internship program.
 \par I would also like to thank \textbf{Mr.Ivan Atwine}(Senior Systems Administrator Kampala Water) and\textbf{Mr. Hilary Kansiime} (IT assistant Kampala Water). I have worked under their supervision. They have guided me with alot of effort and time.
@@ -116,13 +115,16 @@ NSF\dotfill Notes Storage Facility\\
 IBM\dotfill International Business Machine\\
 WAD\dotfill Windows Active Directory\\
 NAT\dotfill Network Address Translation\\
+PBX\dotfill Private Branch Exchange\\
+Mbps\dotfill Megabits per Second\\
+RAID\dotfill Redundant Array of Independent Disks\\
+Vms\dotfill Virtual Machines\\
+ESX\dotfill Elastic Sky X\\
 \thispagestyle{empty}
 \newpage
 \setcounter{page}{1}
 \textbf{Main Report}\\
 \section{Introduction}
-
-
 \subsection{Background of NWSC}\cite{nwscwebsite}
 National Water and Sewerage Corporation (NWSC) is a public utility company 100 percent owned by the Government of Uganda. The Corporation was established in 1972 under Decree No: 34. At its inception in 1972, the Corporation operated in three (3) major towns of Kampala, Jinja and Entebbe. These laws were revised in 1995 by the NWSC Statute and later on the statute was incorporated in the Laws of Uganda as CAP 317 (Laws of Uganda 2000). The primary aim of this was to revise the objectives, powers and structure of NWSC to enable the corporation operate and provide water \& sewerage services in areas entrusted to it on a sound commercial and viable basis.
 \subsubsection{Vision}
@@ -163,14 +165,14 @@ The Corporation only disposes off treated effluent that meets regulatory and oth
 \subsection{Structure of NWSC}
 \subsubsection{Organizational structure}
 NWSC has to thrive to emplace management system that is democratic, honest, inspiring, transparent, and highly participatory. The corporation's top management includes the Managing Director,Deputy MD Technical Services, Deputy MD Finance \& Corporate Strategy, Corporation Secretary, Director Engineering Services, Director Business \& Scientific Services, Director Commercial \& Customer Services, Director Internal Audit, Director Planning \& Capital Development, General Manager Kampala Water, Director Revenue,Finance \& Accounts.
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=\linewidth]{/Users/Dintaine/Desktop/latex/figures/nwsc.png}
 \caption{Organizational Structure and Work flow of NWSC}
 \label{fig:structure}
 \end{figure}
 \subsubsection{IT Structure}
 The top management of the IT department consists of the Senior Manager,Manager Systems Administrator,Manager Application Developer,Manager Infrastructure.
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=\linewidth]{/Users/Dintaine/Desktop/latex/figures/Screenshot.png}
 \caption{I.T Structure of NWSC}
 \label{fig:IT structure}
@@ -197,7 +199,7 @@ Before we started internship,We had orientation that was held at NWSC IREC.We ha
 \subsection{Hardware Repair and Maintenance }
 This included activities like identifying core components of any computer system, installing and configuring of Operating System; in this case I installed Windows 10 Professional and the device Drivers, analyzing the common hardware and software failures, causes and solutions. Basically there are two core components of any computer system and these are
 computer software and hardware components. Since software components are intangible and cannot be seen, the major focus was on the hardware components as far as identifying computer components was concerned.
-\subsubsection{System Unit}
+\subsubsection{System Unit} \cite{morley2014understanding}
 This is the enclosure that contains most of the components of a computer (excluding the mouse,keyboard and display).\\
 I opened a systems unit/case and disassembled the different components found in it.\\
 The different components that I identified were;
@@ -292,7 +294,7 @@ This is the conversion of water consumption into monetary terms that is to say t
 These provide power back up of the computer system within NWSC.
 \subsection{IT Stock Taking Exercise}
 I participated in the IT stock Taking Exercise of NWSC where we were collecting information about the different devices of NWSC for example Laptops,System units,monitors,keyboards , mice, routers, switches, pinters, scanners,plotters and so many other devices. We were recording the Machine type, Make, Serial Number, User and status of the device. This exercise is done every financial year to keep track of the devices.We had to collect information and come up with a final report. Below is a  table \ref{table:1} showing how we were collecting information.
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabu} to 0.8\textwidth { | X[c] | X[c] | X[c] | X[c] | X[c] | X[c] | }
  \hline
@@ -390,9 +392,138 @@ A \textbf{domain controller} is a server that is running a version of the Window
 Replication is the transfer of lists of users and documents to a newly created server and it does so with the installation of the domain. Windows Server sets up a replication topology to determine where a server updates from. In a large network, this keeps replication time down as servers replicate in a form of a ring network.\\
 For more reference about this, please visit \url{https://activedirectorytutorial.blog/}
 \subsection{NWSC Local Area Network /Infrastructure}
-\subsection{Virtualisation}
-
-
+\textbf{Computer Network Installation, Maintenance \& Administration}
+\par Under this, activities like identifying network components and topologies and setting up a wireless network were covered.\\
+\textbf{Identifying Network Topologies and Components}\\
+This was done by reviewing the related work and existing system and also studying the server room and components like routers, switch among others were identified.
+\begin{itemize}
+\item Router:this is a device that transfers data from one network to another in an intelligent way.
+\item Switch:termed as a network bridge with multiple ports which helps to connnect other network devices on the network.
+\item Server:This is a machine which contains resources and files to be shared on the network.
+\item Patch panel: serves as a sort of static switchboard, using cables to interconnect network computers within a LAN and to outside lines including the internet.
+\item Fiber Media converter:  is a simple networking device that makes it possible to connect two dissimilar media types such as twisted pair with fiber optic cabling.
+\item PBX: this is a telephone system within an enterprise that switches calls between enterprise users on local lines while allowing all users to share a certain number of external phone lines.
+\end{itemize}
+\textbf{Cables}
+\par I looked at data cables and a data cable is a medium that allows baseband transmission (binary1,0s) from the transmitter to the receiver.\\
+Types of network cables are coaxial cable, optical fiber cable and twisted pair.Emphasis was put most on the twisted pair type of cables.\\
+Twisted pair cabling is a type of wiring in which two conductors of a single circuit are twisted for the purpose of cancelling out electromagnetic interference (EMI).\\
+The unshielded twisted pair cables have categories which include;
+\begin{table}[H]
+\centering
+\begin{tabu} to 0.8\textwidth { | X[c] | X[c] | }
+ \hline
+ \textbf{Category} & \textbf{Property}\\
+ \hline
+ Category 1 & Voice Only (Telephone)\\
+\hline
+ Category 2& Data to 4Mbps (Local talk) \\
+\hline
+ Category 3 & Data to 10Mbps (Ethernet talk)\\
+\hline
+ Category 4 & Data to 20Mbps (Token Ring)\\
+\hline
+ Category 5 & Data to 100Mbps (Fast Ethernet)\\
+\hline
+ Category 5e & Data to 1000Mbps (Gigabit Ethernet)\\
+\hline
+ Category 6 & Data to 2500Mbps (Gigabit Ethernet)\\
+\hline
+\end{tabu}
+\caption{Table showing the different categories of unshielded twisted pair and their properties}
+\label{table:2}
+\end{table}
+\textbf{Terminating Network Cables}
+\par I was able to terminate cables that are very essential in networking. I terminated with RJ-45 connectors. \\
+\textbf{RJ-45}:This is an 8pin jack commonly used to connect computers onto Ethernet based LAN.\\
+The two cables I terminated were:
+\begin{itemize}
+\item Straight-through that connects dissimilar devices.
+\item Cross-over that connects similar devices.
+\end{itemize}
+Before termination there are necessary tools needed to do the job right and they are;
+\begin{itemize}
+\item Cat5e cable
+\item RJ-45 connector
+\item Cable stripper
+\item Scissors
+\item Crimping tool
+\end{itemize}
+Steps to follow when making connection/termination:
+\begin{itemize}
+\item Strip cable end
+\item Untwist wire ends
+\item  Arrange wires
+\item  Trim wires to size
+\item  Attach connectors
+\item  Check if all wires are touching the end of the connector.
+\item  Crimp
+\item  Test to see if the cable is working using a cable tester.
+\end{itemize}
+\textbf{Wiring Standards}\\
+There are different wiring standards while terminating cables. In this case \textbf{T568B} and \textbf{T568A} wiring standards are used for CAT 5 and 6 cables.These two wiring standards have different colour arrangements and below is a table showing the wiring standard  and colour arrangement from top to bottom.
+\begin{table}[H]
+\centering
+\begin{tabu} to 0.8\textwidth { | X[c] | X[c] | }
+ \hline
+ \textbf{T568A} & \textbf{T568B}\\
+ \hline
+ White Green & White Orange\\
+\hline
+ Green & Orange \\
+\hline
+ White Orange & White Green\\
+\hline
+ Blue & Blue\\
+\hline
+ White Blue & White Blue\\
+\hline
+ Green  & Orange\\
+\hline
+ White Brown & White Brown\\
+\hline
+Brown & Brown\\
+\hline
+\end{tabu}
+\caption{Table showing the two Wiring Standards and their colour arrangement from top to bottom}
+\label{table:3}
+\end{table}
+The wires are arranged following one of the above standards.\\
+Then the wires should be trimmed to the right size which is half.\\
+The color order should be maintained when wires are being fixed into the RJ-45 connector and the connector should be facing downwards. Make sure all the wires extend to the end of the connector.\\
+Squeeze firmly to crimp connector onto cable end.
+\par For a cross over cable, one end can be T568A and the other T568B or viceversa while for a straight through cable both ends have to be similar depending on what you want. You can opt to use T568A or T568B as long as both ends are similar.
+\subsection{Virtualization and Cloud Computing}
+\textbf{Virtualization}: This is the act of creating a virtual version of something including virtual computer hardware plattforms, storage devices and computer network resources.\cite{ruest2009virtualization}\\
+\textbf{Cloud Computing}: This is the practice of using a network of remote servers hosted on the internet to store, manage and process data rather than a local server or a personal computer.
+\par NWSC  uses large storage area networks to create storage pools and assigns them to different virtual machines in other words provides cloud storage for servers and users.
+\subsubsection{Vmware}\cite{muller2005virtualization}
+VMware Server is a virtualization product that makes it possible to partition a single physical server into multiple virtual machines. VMware server works with Windows, Solaris, Linux and Netware, any or all of which can be used concurrently on the same hardware.
+\par NWSC uses Vmware for virtulization purposes.\\
+Vmware ESX server  is mainly used by so many enterprises  because of the following merits:
+\begin{itemize}
+\item Cost effective use of hardware.
+\item  Large portions of your production environment can be replicated on a few servers.
+\item  Lower cost of hardware for the entire test environment.
+\item  Faster rollback during testing.
+\item  Faster deployment of a new test platform.
+\item Test VMs can be decommissioned and even deleted after they are not needed.
+\end{itemize} \cite{muller2005virtualization}
+\subsubsection{RAID}
+RAID is Redundant Array of Independent Disks. A number of disks are aggregated to form a single logical disk. Some of the raids are; RAID 0, RAID 1, RAID 2, RAID 3, RAID 4, RAID 5, RAID 6, RAID 7, RAID 10.All RAID configurations offer benefits and drawbacks. Standard RAID levels such as 2, 3, 4 and 7 are not as commonly used as others, such as 5, 1, 6 and 10. 
+\par NWSC normally uses RAID 5 configuration.\\
+\textbf{RAID 5} \cite{chen1993design}\\
+RAID 5 is a redundant array of independent disks configuration that uses disk striping with parity. Because data and parity are striped evenly across all of the disks, no single disk is a bottleneck. Striping also allows users to reconstruct data in case of a disk failure.\\
+\textbf{How RAID 5 Works} \cite{gray1990parity}\\
+RAID 5 used parity instead of mirroring for data redundancy. When data is written to a RAID 5 drive, the system calculates parity and writes that parity into the drive. While mirroring maintains multiple copies of data in each volume to use in case of failure, RAID 5 can rebuild a failed drive using the parity data, which is not kept on a fixed single drive.
+\par By keeping data on each drive, any two drives can combine to equal the data stored on the third drive, keeping data secure in case of a single drive failure. Drives can be hot swapped in RAID 5, which means a failed HDD can be removed and replaced without downtime.\\
+\textbf{Considerations for using RAID 5}
+\par RAID 5 is one of the most common RAID configurations, and is ideal for application and file servers with a limited number of drives. Considered a good all-around RAID system, RAID 5 combines the better elements of efficiency and performance among the different RAID configurations.
+\par Fast, reliable reads are major benefits. This RAID configuration also offers inexpensive data redundancy and fault tolerance. Writes tend to be slower, because of the parity data calculation, but data can be accessed and read even while a failed drive is being rebuilt. When drives fail, the RAID 5 system can read the information contained on the other drives and recreate that data, tolerating a single drive failure.
+\par RAID 5 evenly balances reads and writes, and is currently one of the most commonly used RAID methods. It has more usable storage than RAID 1 and RAID 10 configurations, and provides performance equivalent to RAID 0.
+\par RAID 5 groups have a minimum of three hard disk drives (HDDs) and no maximum. Because the parity data is spread across all drives, RAID 5 is considered one of the most secure RAID configurations.\\
+\textbf{Drawbacks of RAID 5} \cite{chen1996performance}
+\par Longer rebuild times are one of the major drawbacks of RAID 5, and this delay could result in data loss. Because of its complexity, RAID 5 rebuilds can take a day or longer, depending on controller speed and work load. If another disk fails during the rebuild, then data is lost forever.
 
 
 
@@ -418,10 +549,10 @@ For more reference about this, please visit \url{https://activedirectorytutorial
 This chapter talks about the  new skills gained,experiences as well as the challenges faced and how I managed to solve them during Internship. It also explains the relatedness of University’s taught programmes to the Field work, benefits derived and Career Motivation.
 \subsection{Lessons, Experiences,Skills and New Knowledge}
 \begin{itemize}
-\item I was able to learn how to work efficiently under minimal Supervision since I was given tasks to do when my supervisor was in serious meetings.
-  \item \textbf{Work Ethics related Issue}:Internship is an opportunity to learn the skills and behaviors along with the work values that are required for success in the workplace. Workplace ethics are established codes of conduct that reflect the values of the organization or company where you are employed. I was able to possess the willingness to work hard for my supervisor during my internship period. In addition to working hard it is also important to work smart. This means I acquired the most efficient way to complete tasks and finding ways to save time while completing daily assignments. It’s also important to care about my job and complete all projects while maintaining a positive attitude.
-\item \textbf{Practical Skill}:The Internship gave me  the opportunity to connect classroom theory with current industry challenges, and have exposure to the latest technologies. Opportunities to converse and interact with a large pool of talented experienced department members  provided a deeper insight tothe overall operation, as well as providing a valuable pool of resources to assist in completion of internship program. This internship program was exactly what I needed to nurture the lack of practical skills I had. I would acquire practical experience to complement the theoretical content of my studies.
-\item \textbf{Theoretical Knowledge}:During my internship period at NWSC ,I was able to  upgrade my theoretical knowledge,from the courseunit  of  Computer Networks in theclassroom for example Microsoft windows server 2016, DNS ,DHCP ,IIS ,FTP and Active directory domain service.
+\item I was able to learn how to work efficiently under minimal Supervision since I was given tasks to do when my supervisor was very busy.
+  \item \textbf{Work Ethics related Issue}: Internship is an opportunity to learn the skills and behaviors along with the work values that are required for success in the workplace. Workplace ethics are established codes of conduct that reflect the values of the organization or company where you are employed. I was able to possess the willingness to work hard for my supervisor during my internship period. In addition to working hard it is also important to work smart. This means I acquired the most efficient way to complete tasks and finding ways to save time while completing daily assignments. It’s also important to care about my job and complete all projects while maintaining a positive attitude.
+\item \textbf{Practical Skill}: The Internship gave me  the opportunity to connect classroom theory with current industry challenges, and have exposure to the latest technologies. Opportunities to converse and interact with a large pool of talented experienced department members  provided a deeper insight to the overall operation, as well as providing a valuable pool of resources to assist in completion of internship program. This internship program was exactly what I needed to nurture the lack of practical skills I had. I would acquire practical experience to complement the theoretical content of my studies.
+\item \textbf{Theoretical Knowledge}: During my internship period at NWSC ,I was able to  upgrade my theoretical knowledge,from the courseunit  of  Computer Networks in the classroom for example Microsoft windows server 2016, DNS ,DHCP ,IIS ,FTP and Active directory domain service.
   \item \textbf{Time Management}:  I learnt how to be punctual. NWSC is a busy organization and work had to be done as early as possible arrival time was 7:30am.
 \item \textbf{Communication Skills} : I improved on my  communication skills in a formal and informal way. In the formal way as I had to communicate with my supervisor, staff and interacting with people while providing user support.
 \item \textbf{Internet Research Skills} : I greatly improved my research skills as most of the things learnt i had to get more knowledge about them so I used a great deal of websites to acquire more knowledge by researching on them.
@@ -439,10 +570,10 @@ This chapter talks about the  new skills gained,experiences as well as the chall
 \subsection{Most Interesting Experiences}
 While at NWSC, I had several interesting experiences during my internship. The most interesting experiences while on internship included the following:\\
 \begin{itemize}
-\item Access to the server room:While at NWSC, my supervisor took us to the server room several times to add servers to the racks and also configure them, I was able to have my first glimpse at a real live server since I had been studying them theoretically. This was one of my most interesting experiences while at NWSC.
-\item Branch Visits:While at NWSC, Kampala Water where I was deployed handles all IT issues of the other several branches in Kampala. I was able to visit several branches to handle there IT issues for example adding new desktops at branches that means installing an operating system on the computer and other software needed on the computer,adding a printer on the network,Configuring proxy on there computers. This helped me gain enough experience as far as solving such problems.
-\item Making New Connections :I also made new contacts with people already working at NWSC. These contacts hence forth create vital network of mentors, who I can look up to for guidance and help.I also made new friends with fellow interns and I was also able to learn something new from them.
-\item Learnt new Skills and Experiences:The opportunity to learn new skills and knowledge was exciting for example the important skills needed in a work environment.This will be of great importance in the future.
+\item Access to the server room: While at NWSC, my supervisor took us to the server room several times to add servers to the racks and also configure them, I was able to have my first glimpse at a real live server since I had been studying them theoretically. This was one of my most interesting experiences while at NWSC.
+\item Branch Visits: While at NWSC, Kampala Water where I was deployed handles all IT issues of the other several branches in Kampala. I was able to visit several branches to handle there IT issues for example adding new desktops at branches that means installing an operating system on the computer and other software needed on the computer,adding a printer on the network,Configuring proxy on there computers. This helped me gain enough experience as far as solving such problems.
+\item Making New Connections : I also made new contacts with people already working at NWSC. These contacts hence forth create vital network of mentors, who I can look up to for guidance and help.I also made new friends with fellow interns and I was also able to learn something new from them.
+\item Learnt new Skills and Experiences: The opportunity to learn new skills and knowledge was exciting for example the important skills needed in a work environment.This will be of great importance in the future.
 \end{itemize}
 \subsection{Relatedness of University’s taught programmes to the Field work}
 Despite the fact that much of the theory we acquire in class,is not directly applied at work, there is a  relationship  of what is taught from Year 1 through Year 3 at the University.
@@ -454,8 +585,8 @@ and integrity. This is evidenced while at the work environment as well.
 \begin{itemize}
 \item Computer Literacy: Computer skills were very vital as all tasks at NWSC were computerized; therefore computer literacy is a must for every intern.
 \item Communication skills: These skills were very important during the field attachment; I had to listen to the instructions given to me by my supervisor and also communicating with staff at the corporation.
-\item Research methodology. This course content helped I in preparing reports especially this report, I applied the
-methods of data collection especially in the IT stock taking exercise that i was involved in.
+\item Research methodology: This course content helped I in preparing reports especially this report, I applied the
+methods of data collection especially in the IT stock taking exercise that I was involved in.
 \end{itemize}
 \subsection{Challenges faced and how managed}
 \subsubsection{Individual Challenges}
@@ -474,7 +605,7 @@ methods of data collection especially in the IT stock taking exercise that i was
 \item Improved appreciation of the course: I worked under the supervision of Senior Systems Administrator as this is one of the prospective professions for a student of Computer Science, I got to understand the available professions for a graduate of this course and hence its applicability in the real world.
 \item Gained exposure to the demands and challenges of the workplace: The exposure to the organizational culture of The Corporation and the tasks given to me gave me great exposure to the demands and challenges of the workplace.
 \item Practical experiences: I also got a chance to apply the theory taught in class. This helped me get a clear concept through understanding its applicability in the real world.
-\item New knowledge and skills acquired: I acquired new knowledge and skills while on field attachment; Knowledge on the operations of NWSC through the orientation exercise where we had different presenations about the history of NWSC, Water Supply,Sewage,Call centre Operations and so many others.
+\item New knowledge and skills acquired: I acquired new knowledge and skills while on field attachment; Knowledge on the operations of NWSC through the orientation exercise where we had different presenations about the history of NWSC, Water Supply, Sewage, Call centre Operations and so many others.
 \end{itemize}
 \subsection{Career Motivation}
 I must say that the I am encouraged that I took the right career path right from the day I decided to do  a degree in Computer Science that would lead me to the future of my life as an IT specialist. I affirm that I have been able to acquire several job
@@ -484,7 +615,7 @@ fact.I was able to interact with my supervisor and several other collegues in th
 \section{Conclusion and Recommendations}
 \subsection{Conclusion}
 After going through the whole period of internship as an intern I’ve observed so many professional activities and learnt as well. This internship was very fruitful to me because I was able  to cover many different fields. I also learnt new concepts and new ways of working.
-\par The compulsory supervised industrial attachment of the University gives us, students, the opportunity to apply knowledge in real work, exposing us to work methods not taught at university. The program provides access to products and equipment not available in the university, as well as assessing our interest in the occupations we plan to undertake.To my understanding, the program has served its purpose to my academic progress and industrial practice.
+\par The compulsory supervised industrial attachment of the University gives us  students  the opportunity to apply knowledge in real work, exposing us to work methods not taught at university. The program provides access to products and equipment not available in the university, as well as assessing our interest in the occupations we plan to undertake.To my understanding, the program has served its purpose to my academic progress and industrial practice.
 \par NWSC  is a very good and favorable environment for internship full of lots of new information technology practical aspects that are essential with the modern digital technology. The place is well organized and suitable for trainees who are willing to learn.
 \par To conclude, I think that this internship was very beneficial to me as I learnt a lot, and it made me discover work in a real world.
 \subsection{Recommendations}
@@ -496,32 +627,32 @@ This is my first industrial training/internship in my university and I strongly 
 \end{itemize}
 \newpage
 \section{Appendix}
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=\linewidth]{/Users/Dintaine/Desktop/latex/figures/systemunit.jpg}
 \caption{An open System Unit showing the interior components after disassembling process}
 \label{fig:System Unit}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=\linewidth]{/Users/Dintaine/Desktop/latex/figures/server.jpg}
 \caption{Me in the Server Room}
 \label{fig:Server Room}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=\linewidth]{/Users/Dintaine/Desktop/latex/figures/tools.jpg}
 \caption{A tone Tracer and Cable Tester}
 \label{fig:Tools}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=\linewidth]{/Users/Dintaine/Desktop/latex/figures/blower.jpg}
 \caption{Me using a blower to perform hardware maintenance(Removing dust from the interior components of the Server)}
 \label{fig:Blower}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=\linewidth]{/Users/Dintaine/Desktop/latex/figures/cartridge.jpg}
 \caption{An IBM LTO Ultrium Data 6 Cartridge(Inserted into the Tape Library in the Server Room to improve on Data Storage}
 \label{fig:Cartridge}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=\linewidth]{/Users/Dintaine/Desktop/latex/figures/frends.jpg}
 \caption{Me,my colleagues and Supervisor in the Server Room }
 \label{fig:Friends}
