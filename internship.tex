@@ -3,7 +3,7 @@
 \setcounter{tocdepth}{3}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage[nottoc]{tocbibind}
 \usepackage{tabu}
 \usepackage{hyperref}
 \hypersetup{
@@ -20,6 +20,8 @@ pdftitle={Field Attachment Report},
 \urlstyle{same}
 \begin{document}
 \begin{titlepage}
+\noindent\fbox{%
+    \parbox{\textwidth}{%
 \begin{center}
 \textbf{MAKERERE UNIVERSITY}
 \end{center}
@@ -32,20 +34,22 @@ A REPORT ON\\FIELD ATTACHMENT/INTERNSHIP AT\\NATIONAL WATER \& SEWERAGE CORPORAT
 BY\\AINEMUKAMA DINTON HAROLD\\16/U/3020/PS
 \end{center}
 \hangindent 2cm Field attachment Report submitted to the School of Computing and Informatics Technology or College of Computing and Information Sciences.\\
-\par In Partial fulfilment of the requirements for the degree of Computer Science of Makerere University Kampala.
+\par In Partial fulfillment of the requirements for the degree of Computer Science of Makerere University Kampala.
 \begin{center}
 Ainemukama Dinton Harold:\dotfill
 \end{center}
-\makebox[2.5in]{\hrulefill} \hspace{0.3in}\makebox[2.5in]{\dotfill}\\
-Field Supervisor \hspace{1.5in} \makebox[3.0in][r]{Stamp \& Date:\hrulefill}\\
+\makebox[2.5in]{\hrulefill} \hspace{0.3in}\makebox[1.8in]{\dotfill}\\
+Field Supervisor \hspace{1.5in} \makebox[2.1in][r]{ Date:\hrulefill}\\
 \vspace{.1in}
-\makebox[2.5in]{\hrulefill} \hspace{0.3in}\makebox[2.5in]{\dotfill}\\
-Academic Supervisor  \hspace{1.5in} \makebox[2.0in][r]{Date:\hrulefill}\\
+\makebox[2.5in]{\hrulefill} \hspace{0.3in}\makebox[1.8in]{\dotfill}\\
+Academic Supervisor  \hspace{1.5in} \makebox[1.8in][r]{Date:\hrulefill}\\
+   }%
+}
 \end{titlepage}
 \thispagestyle{empty}
 \newpage
 \textbf{Approval of the Internship Report}
-\par I Ainemukama Dinton Harold of Registration Number 16/U/3020/PS, sincerely declare that the Internship Report is submitted to the partial fulfilment of the internship program during the last two months. Any part of this report has not been reported or copied from any report of the University and others.\\
+\par I Ainemukama Dinton Harold of Registration Number 16/U/3020/PS, sincerely declare that the Internship Report is submitted to the partial fulfillment of the internship program during the last two months. Any part of this report has not been reported or copied from any report of the University and others.\\
 Approved by:\\
 \makebox[2.5in]{\hrulefill} \hspace{0.3in}\makebox[2.5in]{\dotfill}\\
 Field Supervisor \makebox[3.0in][r]{Signature}\\
@@ -54,9 +58,9 @@ Field Supervisor \makebox[3.0in][r]{Signature}\\
 Academic Supervisor \makebox[2.5in][r]{Signature}\\
 \newpage
 \textbf{Acknowledgment}\\
-The special thanks goes to my helpful supervisor \textbf{Mr.Willy Nuwamanya},(Senior Manager Billing \& IT). The supervision and support that he gave truly helped in the progression and smoothness of the internship program.
-\par I would also like to thank \textbf{Mr.Ivan Atwine}(Senior Systems Administrator Kampala Water) and\textbf{Mr. Hilary Kansiime} (IT assistant Kampala Water). I have worked under their supervision. They have guided me with alot of effort and time.
-\par The co-operation is much indeed appreciated. I would also like to thank \textbf{National Water \& Sewerage Corporation} for allowing me to do my internship from their great Organization.
+The special thanks goes to my helpful supervisor \textbf{Mr.Ivan Atwiine},(Senior Systems Administrator Kampala Water). The supervision and support that he gave truly helped in the progression and smoothness of the internship program.
+\par I would also like to thank \textbf{Mr.kevin Nyeko}(Senior Officer Systems Administrator Head Office) and \textbf{Mr. Hilary Kansiime} (IT assistant Kampala Water). I have worked under their supervision. They have guided me with alot of effort and time.
+\par Their cooperation is much indeed appreciated. I would also like to thank \textbf{National Water \& Sewerage Corporation} for allowing me to do my internship from their great Organization.
 \par I also would like to thank all the respected officers and employees of \textbf{NWSC} for their continuous inspiration and support.
 \par I am also very grateful to all of my lecturers and fellow friends for their encouragement and cooperation throughout my Internship and academic life.
 \par Finally, I am forever grateful to my parents for their support and love.
@@ -66,42 +70,35 @@ The special thanks goes to my helpful supervisor \textbf{Mr.Willy Nuwamanya},(Se
 \thispagestyle{empty}
 \newpage
 \textbf{ABSTRACT}\\
-This report is about to explain what I learned during my internship period with National Water \& Sewerage Corporation, IT department,Kampala Branch. As the main purpose of internship is to learn by working in practical environment and to apply the knowledge acquired during the studies in a real world scenario in order to tackle problems using the knowledge and skills learned during the academic process.
-\par This report is divided into four  sections. Section one will discuss about the background of NWSC. In Section two we will get the different activities I carried out during the Internship period. Section three the overall Internship Experience. The last section is conclusion and recommendations of the previous sections.
+This report is about to explain what I learned during my internship period with National Water \& Sewerage Corporation, IT department,Kampala Branch. As the main purpose of internship is to learn by working in a practical environment and to apply the knowledge acquired during the studies in a real world scenario.
+\par This report is divided into four  sections. Section one will discuss about the background of NWSC. In Section two we will get the different activities I carried out during the Internship period. Section three my overall Internship Experience. The last section is the conclusion and recommendations of the previous sections.
 \par My training focused on various things like system administration, networking, hardware repair and maintenance. Some of the activities i did during my internship training include assembling and disassembling computer systems, adding computers to the domain, IP print services, software installation, Network maintenance and trouble shooting, providing user support,IT stock taking  and so many others.
 \par The most important in an Internship program is that the student should spend their time in a true manner and with the spirit to learn practical orientation of theoretical study framework. This report is about my Internship that i have undergone at NWSC, IT department, Kampala Branch from June-August 2018.
 \thispagestyle{empty}
 \newpage
-\thispagestyle{empty}
+\pagenumbering{roman}
 \tableofcontents
-\thispagestyle{empty}
-\cleardoublepage
-\thispagestyle{empty}
+\clearpage
 \newpage
 \listoffigures
 \newpage
 \listoftables
-\thispagestyle{empty}
 \newpage
 \textbf{List of Acronyms}\\
 NWSC\dotfill  National Water \& Sewerage Corporation\\
 IT\dotfill Information Technology\\
-MD\dotfill Managing Director\\
 IP\dotfill Internet Protocol\\
-KW\dotfill Kampala Water\\
-IREC\dotfill International Resource Center\\
-DHCP\dotfill Dynamic Host Configuration Protocal\\
+DHCP\dotfill Dynamic Host Configuration Protocol\\
 DNS\dotfill Domain Name System\\
 FTP\dotfill File Transfer Protocol\\
 IIS\dotfill Internet Information Services\\
-HR\dotfill Human Resource\\
-GIS\dotfill Geographic Information System\\
 CMOS\dotfill Complementary Metal-Oxide Semi Conductor\\
+IC\dotfill Integrated Circuit\\
 PCI\dotfill Peripheral Component Interconnect\\
 CD\dotfill Compact Disk\\
 HDD\dotfill Hard Disk Drive\\
 SATA\dotfill Serial Advanced Technology Attachment\\
-CPU\dotfill Central Proccessing Unit\\
+CPU\dotfill Central Processing Unit\\
 BIOS\dotfill Basic Input Output System\\
 I/O\dotfill Input/Output\\
 RAM\dotfill Random Access Memory\\
@@ -114,13 +111,11 @@ PST\dotfill Personal Storage Table\\
 NSF\dotfill Notes Storage Facility\\
 IBM\dotfill International Business Machine\\
 WAD\dotfill Windows Active Directory\\
-NAT\dotfill Network Address Translation\\
 PBX\dotfill Private Branch Exchange\\
 Mbps\dotfill Megabits per Second\\
 RAID\dotfill Redundant Array of Independent Disks\\
-Vms\dotfill Virtual Machines\\
-ESX\dotfill Elastic Sky X\\
-\thispagestyle{empty}
+\clearpage
+\pagenumbering{arabic}
 \newpage
 \setcounter{page}{1}
 \textbf{Main Report}\\
@@ -128,7 +123,7 @@ ESX\dotfill Elastic Sky X\\
 \subsection{Background of NWSC}\cite{nwscwebsite}
 National Water and Sewerage Corporation (NWSC) is a public utility company 100 percent owned by the Government of Uganda. The Corporation was established in 1972 under Decree No: 34. At its inception in 1972, the Corporation operated in three (3) major towns of Kampala, Jinja and Entebbe. These laws were revised in 1995 by the NWSC Statute and later on the statute was incorporated in the Laws of Uganda as CAP 317 (Laws of Uganda 2000). The primary aim of this was to revise the objectives, powers and structure of NWSC to enable the corporation operate and provide water \& sewerage services in areas entrusted to it on a sound commercial and viable basis.
 \subsubsection{Vision}
-"To be the leading customer Service Oriented utility in the world." 
+"To be the leading customer Centered Water utility in the world." 
 \subsubsection{Mission}
 "To sustainably and equitably provide cost effective quality water and sewerage services to the delight of all stakeholders while conserving the environment."
 \subsubsection{Objectives}
@@ -147,7 +142,7 @@ NWSC ensures that the water supplied up to the customer's meter is of a very hig
 \underline{\textbf{Water \& Sewerage Services}}\\ 
 NWSC ensures that the water  provided meets all regulatory standards they adhere to and distribute it equitably.\\
 \underline{\textbf{Extension of Water \& Sewerage Services}}\\ 
-NWSC endeavours to serve the populations of the areas in which they operate with clean, reliable and safe water.\par They make mains extensions of water services to areas meet the demand.\par They also provide Sewage collection, treatment and disposal services in accordance with the required environmental standards.\\  
+NWSC endeavors to serve the populations of the areas in which they operate with clean, reliable and safe water.\par They make mains extensions of water services to areas meet the demand.\par They also provide Sewage collection, treatment and disposal services in accordance with the required environmental standards.\\  
 \underline{\textbf{Service Connections}}\\ 
 NWSC connects all applicants who meet their standard requirements in the areas where their services exist.\\
 \underline{\textbf{Meter Reading}}\\
@@ -164,7 +159,7 @@ NWSC provides sewerage collection, treatment and disposal services in accordance
 The Corporation only disposes off treated effluent that meets regulatory and other stakeholder requirements and in so doing, they ensure safety their  customers, workers and the integrity of the receiving environment.     
 \subsection{Structure of NWSC}
 \subsubsection{Organizational structure}
-NWSC has to thrive to emplace management system that is democratic, honest, inspiring, transparent, and highly participatory. The corporation's top management includes the Managing Director,Deputy MD Technical Services, Deputy MD Finance \& Corporate Strategy, Corporation Secretary, Director Engineering Services, Director Business \& Scientific Services, Director Commercial \& Customer Services, Director Internal Audit, Director Planning \& Capital Development, General Manager Kampala Water, Director Revenue,Finance \& Accounts.
+NWSC has to thrive to emplace management system that is democratic, honest, inspiring, transparent, and highly participatory. The corporation's top management includes the Managing Director,Deputy Managing Director Technical Services, Deputy Managing Director Finance \& Corporate Strategy, Corporation Secretary, Director Engineering Services, Director Business \& Scientific Services, Director Commercial \& Customer Services, Director Internal Audit, Director Planning \& Capital Development, General Manager Kampala Water, Director Revenue,Finance \& Accounts.
 \begin{figure}[H]
 \includegraphics[width=\linewidth]{/Users/Dintaine/Desktop/latex/figures/nwsc.png}
 \caption{Organizational Structure and Work flow of NWSC}
@@ -195,7 +190,7 @@ For further references see \href{https://www.nwsc.co.ug/index.php/about-us}{Back
 \newpage
 \section{Field Attachment Activities}
  \subsection{Orientation}
-Before we started internship,We had orientation that was held at NWSC IREC.We had different presentations from different speakers.First was the senior HR manager Mr Makumbi Peter who talked about general Expectations and prohibited Acts.Then we had a presentation from principal Officer GIS ,Mr Gilbert Akol who talked about the background of  NWSC.We also had a presentation from Engineer Francis Bbaale who talked about water supply, a presentation about sewage from Engineer Angelo Kwitonda, a presentation from Mr George Kasule about Call Centre Operations. We were then deployed to different branches under Kampala Water basing on our areas of residence to reduce on transport costs but all students under IT were deployed at sixth street Branch. We had orientation the next day with Senior Manager Billing and IT Mr Willy Nuwamanya and the Senior Manager IT Kampala Water Mr Julius Ouma,We introduced ourselves to them and the different courses we were doing and also told them our general expectations from the internship.We were further re-deployed to other branches because our number could not be accomodated at Sixth street and thats when i was told to go to Jinja road branch which is the head office of Kampala Water.
+Before we started internship,We had orientation that was held at NWSC International Resource Centre.We had different presentations from different speakers.First was the senior Human Resource manager Mr Makumbi Peter who talked about general Expectations and prohibited Acts.Then we had a presentation from principal Officer Geographic Information Systems ,Mr Gilbert Akol who talked about the background of  NWSC.We also had a presentation from Engineer Francis Bbaale who talked about water supply, a presentation about sewage from Engineer Angelo Kwitonda, a presentation from Mr George Kasule about Call Centre Operations. We were then deployed to different branches under Kampala Water basing on our areas of residence to reduce on transport costs but all students under IT were deployed at sixth street Branch. We had orientation the next day with Senior Manager Billing and IT Mr Willy Nuwamanya and the  Manager IT Kampala Water Mr Julius Ouma,We introduced ourselves to them and the different courses we were doing and also told them our general expectations from the internship.We were further re-deployed to other branches because our number could not be accommodated at Sixth street and that is when i was told to go to Jinja road branch which is the head office of Kampala Water.
 \subsection{Hardware Repair and Maintenance }
 This included activities like identifying core components of any computer system, installing and configuring of Operating System; in this case I installed Windows 10 Professional and the device Drivers, analyzing the common hardware and software failures, causes and solutions. Basically there are two core components of any computer system and these are
 computer software and hardware components. Since software components are intangible and cannot be seen, the major focus was on the hardware components as far as identifying computer components was concerned.
@@ -222,21 +217,21 @@ The different components that I identified were;
 \item BIOS
 \end{itemize}
 \textbf{CPU}\\
- The central processing unit (also known as the microprocessor) is the brain of computer it is where the processing of data takes place. It carries out the instructions of a computer program by performing basic arithmetic, logical, control and I/O operations. The CPU has four primary functions: fetch, decode, execute and writeback.\\
+ The central processing unit (also known as the microprocessor) is the brain of computer it is where the processing of data takes place. It carries out the instructions of a computer program by performing basic arithmetic, logical, control and I/O operations. The CPU has four primary functions: fetch, decode, execute and write back.\\
 \textbf{Fetch}\\
- The CPU gets the instruction that it needs to run in a program and each instruction in a program is stored in a specific address. The CPU has a program counter which keeps track of the CPU’s position in the program.\\
+ The CPU gets the instruction that it needs to run in a program and each instruction in a program is stored in a specific address. The CPU has a program counter which keeps track of the CPU's position in the program.\\
 \textbf{Decode}\\
-\ Here the compiler of a specific language breaks down the code in Assembly language that the CPU understands.Then the Assembler translates assembling language into binary code.\\
+\ Here the compiler of a specific language breaks down the code in Assembly language that the CPU understands.Then the Assembler translates assembly language into binary code.\\
 \textbf{Execute}\\
  Using the ALU the computer performs extremely complicated mathematical calculations.Moves data from one location to another.Jumps to different locations based on decisions made by the CPU itself.\\
-\textbf{Writeback}\\
+\textbf{Write back}\\
 For every process the CPU produces some sort of output and it writes it into the computer memory.\\
 \textbf{RAM chip}\\
-It is best known as computer memory. It is referred to as ‘random access’ because you can access any memory cell directly if you know the row and column that intersect at that cell.
+It is best known as computer memory. It is referred to as random access because you can access any memory cell directly if you know the row and column that intersect at that cell.
 \par RAM has volatile memory which means the stored information on it is lost when there is no power.
 \par RAM is used by the CPU when a computer is running to store information that needs to be used very quickly, but the information is not stored permanently.\\
 \textbf{CMOS battery}\\
-CMOS is a physical part on the motherboard. It is a memory chip that houses setting configurations and is powered by an onboard battery. It is reset in case the battery runs out of energy.
+CMOS is a physical part on the motherboard. It is a memory chip that houses setting configurations and is powered by an on board battery. It is reset in case the battery runs out of energy.
 \par The CMOS battery power codes that runs before the operating system is loaded in a computer.
 \par The common tasks completed are; activating the keyboard, loading the system drives and setting the system clock.\\
 \textbf{South Bridge}\\
@@ -264,7 +259,7 @@ PSU converts main AC to low-voltage DC power for the internal components of the 
 It helps connect IDE devices to the motherboard. And this is done by the help of the IDE connectors.\\
 \textbf{BIOS}\\
 BIOS works hand in hand with the CMOS and the bios help set up the computer and boot the operating system.
-\par BIOS has drivers which are low-level drivers that give the computer basic operational control over your computer’s hardware.
+\par BIOS has drivers which are low-level drivers that give the computer basic operational control over your computer's hardware.
 \par There is a BIOS setup that help in configuration of hardware settings including system settings like time, date and computer passwords.\\
 \textbf{Motherboard}\\
 It holds many crucial components of a computer together, including the CPU, RAM and connectors for input and output devices.
@@ -284,8 +279,7 @@ The following steps were involved during the process of assembling the various c
 \item Connect the Power cable to the Power supply unit.
 \end{itemize}
 \subsubsection{Installation of Windows 10}
-I predominantly used a 16GB Flash drive with windows 10 stored on it , which I made bootable  using diskpart commands. I selected the language to use as English, I then entered the product key, I selected the edition (for my installation) I selected standard, accepted the terms and conditions having read about them. I selected the type of installation as custom for my installation. Then I chose where to install the windows that is to say  which drive. This can be done by either formatting the drive or simply partitioning the disc if you want to install on fresh drive. Now during my installation there were no drivers installed yet so I had to so by clicking load drive to provide a mass storage drive for my installation, I restarted the computer after
-reinstalling the hard disk (the reason here was, that server ever doesn’t have controllers to detect the hardware drives for new operating system), BIOS check all the hardware to see if it’s just fine then it loaded operating system.
+I predominantly used a 16GB Flash drive with windows 10 stored on it , which I made bootable  using disk part commands. I selected the language to use as English, I then entered the product key. I selected the type of installation as custom for my installation. Then I chose where to install the windows that is to say  which drive. This can be done by either formatting the drive or simply partitioning the disc if you want to install on fresh drive. Now during my installation there were no drivers installed yet so I had to so by clicking load drive to provide a mass storage drive for my installation, I restarted the computer after re-installing the hard disk (the reason here was, that server ever doesn't have controllers to detect the hardware drives for new operating system), BIOS check all the hardware to see if it's just fine then it loaded operating system.
 \subsection{Review of related Work and existing systems at NWSC}
 \textbf{Billing System}\\
 This is the conversion of water consumption into monetary terms that is to say the amount of water consumed is converted into money and that is the amount of money on your bill.
@@ -293,7 +287,7 @@ This is the conversion of water consumption into monetary terms that is to say t
 \textbf{Central UPS System }\\
 These provide power back up of the computer system within NWSC.
 \subsection{IT Stock Taking Exercise}
-I participated in the IT stock Taking Exercise of NWSC where we were collecting information about the different devices of NWSC for example Laptops,System units,monitors,keyboards , mice, routers, switches, pinters, scanners,plotters and so many other devices. We were recording the Machine type, Make, Serial Number, User and status of the device. This exercise is done every financial year to keep track of the devices.We had to collect information and come up with a final report. Below is a  table \ref{table:1} showing how we were collecting information.
+I participated in the IT stock Taking Exercise of NWSC where we were collecting information about the different devices of NWSC for example Laptops,System units,monitors,keyboards , mice, routers, switches, printers, scanners,plotters and so many other devices. We were recording the Machine type, Make, Serial Number, User and status of the device. This exercise is done every financial year to keep track of the devices.We had to collect information and come up with a final report. Below is a  table \ref{table:1} showing how we were collecting information.
 \begin{table}[H]
 \centering
 \begin{tabu} to 0.8\textwidth { | X[c] | X[c] | X[c] | X[c] | X[c] | X[c] | }
@@ -328,8 +322,8 @@ I participated in the IT stock Taking Exercise of NWSC where we were collecting 
 This is individual responsibility for maintaining a multi-user computer system, including a local
 area network. This can also be defined as the field of work in which someone manages one or more systems, like software, hardware, servers or workstations and its main goal is ensuring that the systems are running effectively and efficiently.
 \subsubsection{Creating a Local user account}
-I clicked start, selected administrative tools and then clicked computer management. In computer management, I clicked local users and group, I double clicked the user’s folder, followed by right clicking in users list and then new user, filled in the information for my new user and finally clicked create. More users I created them using the same criteria. After all that I clicked close and I had all my users’ local accounts created.\\
-If the account is to be used by a service application , un check user must change password at next log on and check the options below;
+I clicked start, selected administrative tools and then clicked computer management. In computer management, I clicked local users and group, I double clicked the user's folder, followed by right clicking in users list and then new user, filled in the information for my new user and finally clicked create. More users I created them using the same criteria. After all that I clicked close and I had all my users local accounts created.\\
+If the account is to be used by a service application , uncheck user must change password at next log on and check the options below;
 \begin{itemize}
 \item Users cannot change password.
 \item Password never expires.
@@ -339,7 +333,7 @@ The newly created user accounts were seen. By default new user accounts are give
 \begin{itemize}
 \item I clicked start, selected administrative tools and clicked Active Directory users and Computers.
 \item In Active Directory users and computers, I navigated the folder to store the new user, I right clicked the user list and clicked new user, filled in the new user information and clicked next, filled in the password information and clicked next.
-\item If the account is to be used by a service application , uncheck user must change password at next logon and check the options below;
+\item If the account is to be used by a service application , uncheck user must change password at next log on and check the options below;
 \begin{itemize}
 \item User cannot change password.
 \item Password never expires
@@ -348,20 +342,20 @@ The newly created user accounts were seen. By default new user accounts are give
 \end{itemize}
 \subsubsection{Mail Migration}
 NWSC shifted from using Lotus Notes as their mail system to using Outlook.But along the way, staff could no longer access their old mail due to the migration from one mail system to another.So we did remote desktop connection to the server, got the files of the different staff who were complaining and used a software called Kernel Lotus Notes to Outlook. This software converts the files from \textbf{.NSF} file extension supported by IBM Lotus Notes database to \textbf{.PST} file extension that is supported by Outlook.
-\par Next i had to export the Outlook \textbf{.PST} file. I followed the following steps below inorder to do it;
+\par Next i had to export the Outlook \textbf{.PST} file. I followed the following steps below in order to do it;
 \begin{itemize}
 \item Open Outlook 2010.
 \item Go to File - Open and then click on Import.
 \item Select Export to a file and then click Next.
 \item Select Outlook Data File (.pst) and then click on Next.
-\item Select the top-most folder, check the box Include subfolders and then click on Next.
+\item Select the top-most folder, check the box Include sub-folders and then click on Next.
 \item Click on the Browse button.
 \item Decide where you will export the .pst file and then click on OK.
 \item Click on Finish.
 \end{itemize}
 \subsubsection{Configuring Proxy Server}
 NWSC uses proxy server to bypass traffic and also IP blocking that is to say to restrict some devices with certain IP's from accessing the network.
-\par It is also used for security that is to say it keeps the internal network  structure of the company secret by use of NAT.
+\par It is also used for security that is to say it keeps the internal network  structure of the company secret by use of Network Address Translation.
 \par It is also used for monitoring and filtering by use of content-control software which restricts or controls the content an internet user is capable to access.\\
 I configured proxy for so many users that wanted to access the internet using the following steps;
 \begin{itemize}
@@ -382,12 +376,11 @@ Windows Active Directory (WAD) is a technology installed on a computer to act as
 \item Lists
 \end{itemize}
 \textbf{Windows Active Directory Data Store}\\
-A \textbf{domain} is a common directory database which stores information about the objects that
-belong to it. NWSC's is domain is nwsc.co.ug.\\
-A \textbf{tree} consists of a single domain or multiple domains in a contiguous namespace.\\
+A \textbf{domain} is a common directory database which stores information about the objects that belong to it. NWSC's is domain is nwsc.co.ug.\\
+A \textbf{tree} consists of a single domain or multiple domains in a contiguous name space.\\
 A \textbf{forest} is a collection of multiple trees that share a common global catalog, directory schema, logical structure and directory configuration.\\
 A \textbf{domain controller} is a server that is running a version of the Windows Server operating system and has Windows Active Directory Domain Services installed. Domain Controller is a dedicated computer purposely meant to manage users, properties in an organization unit.
-\par WAD uses a structured data store as the basis for a logical, hierarchical organization of directory information. The data store contains information about WAD objects which typically include shared resources such as servers, printers and the network user and computer accounts. Security is integrated with WAD through logon authentication and access control to objects in the directory.\\
+\par WAD uses a structured data store as the basis for a logical, hierarchical organization of directory information. The data store contains information about WAD objects which typically include shared resources such as servers, printers and the network user and computer accounts. Security is integrated with WAD through log on authentication and access control to objects in the directory.\\
 \textbf{Windows Active Directory Replication}\\
 Replication is the transfer of lists of users and documents to a newly created server and it does so with the installation of the domain. Windows Server sets up a replication topology to determine where a server updates from. In a large network, this keeps replication time down as servers replicate in a form of a ring network.\\
 For more reference about this, please visit \url{https://activedirectorytutorial.blog/}
@@ -398,16 +391,16 @@ For more reference about this, please visit \url{https://activedirectorytutorial
 This was done by reviewing the related work and existing system and also studying the server room and components like routers, switch among others were identified.
 \begin{itemize}
 \item Router:this is a device that transfers data from one network to another in an intelligent way.
-\item Switch:termed as a network bridge with multiple ports which helps to connnect other network devices on the network.
+\item Switch:termed as a network bridge with multiple ports which helps to connect other network devices on the network.
 \item Server:This is a machine which contains resources and files to be shared on the network.
 \item Patch panel: serves as a sort of static switchboard, using cables to interconnect network computers within a LAN and to outside lines including the internet.
 \item Fiber Media converter:  is a simple networking device that makes it possible to connect two dissimilar media types such as twisted pair with fiber optic cabling.
 \item PBX: this is a telephone system within an enterprise that switches calls between enterprise users on local lines while allowing all users to share a certain number of external phone lines.
 \end{itemize}
 \textbf{Cables}
-\par I looked at data cables and a data cable is a medium that allows baseband transmission (binary1,0s) from the transmitter to the receiver.\\
+\par I looked at data cables and a data cable is a medium that allows baseband transmission (binary 1,0 s) from the transmitter to the receiver.\\
 Types of network cables are coaxial cable, optical fiber cable and twisted pair.Emphasis was put most on the twisted pair type of cables.\\
-Twisted pair cabling is a type of wiring in which two conductors of a single circuit are twisted for the purpose of cancelling out electromagnetic interference (EMI).\\
+Twisted pair cabling is a type of wiring in which two conductors of a single circuit are twisted for the purpose of canceling out electromagnetic interference (EMI).\\
 The unshielded twisted pair cables have categories which include;
 \begin{table}[H]
 \centering
@@ -454,7 +447,7 @@ Steps to follow when making connection/termination:
 \item Strip cable end
 \item Untwist wire ends
 \item  Arrange wires
-\item  Trim wires to size
+\item  Trim wires to the same length
 \item  Attach connectors
 \item  Check if all wires are touching the end of the connector.
 \item  Crimp
@@ -500,14 +493,14 @@ Squeeze firmly to crimp connector onto cable end.
 \subsubsection{Vmware}\cite{muller2005virtualization}
 VMware Server is a virtualization product that makes it possible to partition a single physical server into multiple virtual machines. VMware server works with Windows, Solaris, Linux and Netware, any or all of which can be used concurrently on the same hardware.
 \par NWSC uses Vmware for virtulization purposes.\\
-Vmware ESX server  is mainly used by so many enterprises  because of the following merits:
+Vmware ESX(Elastic Sky X) server  is mainly used by so many enterprises  because of the following merits:
 \begin{itemize}
 \item Cost effective use of hardware.
 \item  Large portions of your production environment can be replicated on a few servers.
 \item  Lower cost of hardware for the entire test environment.
 \item  Faster rollback during testing.
 \item  Faster deployment of a new test platform.
-\item Test VMs can be decommissioned and even deleted after they are not needed.
+\item Test Virtual Machines can be decommissioned and even deleted after they are not needed.
 \end{itemize} \cite{muller2005virtualization}
 \subsubsection{RAID}
 RAID is Redundant Array of Independent Disks. A number of disks are aggregated to form a single logical disk. Some of the raids are; RAID 0, RAID 1, RAID 2, RAID 3, RAID 4, RAID 5, RAID 6, RAID 7, RAID 10.All RAID configurations offer benefits and drawbacks. Standard RAID levels such as 2, 3, 4 and 7 are not as commonly used as others, such as 5, 1, 6 and 10. 
@@ -524,16 +517,6 @@ RAID 5 used parity instead of mirroring for data redundancy. When data is writte
 \par RAID 5 groups have a minimum of three hard disk drives (HDDs) and no maximum. Because the parity data is spread across all drives, RAID 5 is considered one of the most secure RAID configurations.\\
 \textbf{Drawbacks of RAID 5} \cite{chen1996performance}
 \par Longer rebuild times are one of the major drawbacks of RAID 5, and this delay could result in data loss. Because of its complexity, RAID 5 rebuilds can take a day or longer, depending on controller speed and work load. If another disk fails during the rebuild, then data is lost forever.
-
-
-
-
-
-
-
-
-
-
 \subsection{Other IT field Activities}
 \begin{itemize}
 \item Installing drivers for the printers in various departments.
@@ -546,19 +529,19 @@ RAID 5 used parity instead of mirroring for data redundancy. When data is writte
 \newpage
 \section{The Overall Internship Experience}
 \subsection{Inroduction}
-This chapter talks about the  new skills gained,experiences as well as the challenges faced and how I managed to solve them during Internship. It also explains the relatedness of University’s taught programmes to the Field work, benefits derived and Career Motivation.
+This chapter talks about the  new skills gained,experiences as well as the challenges faced and how I managed to solve them during Internship. It also explains the relatedness of University's taught programmes to the Field work, benefits derived and Career Motivation.
 \subsection{Lessons, Experiences,Skills and New Knowledge}
 \begin{itemize}
 \item I was able to learn how to work efficiently under minimal Supervision since I was given tasks to do when my supervisor was very busy.
-  \item \textbf{Work Ethics related Issue}: Internship is an opportunity to learn the skills and behaviors along with the work values that are required for success in the workplace. Workplace ethics are established codes of conduct that reflect the values of the organization or company where you are employed. I was able to possess the willingness to work hard for my supervisor during my internship period. In addition to working hard it is also important to work smart. This means I acquired the most efficient way to complete tasks and finding ways to save time while completing daily assignments. It’s also important to care about my job and complete all projects while maintaining a positive attitude.
-\item \textbf{Practical Skill}: The Internship gave me  the opportunity to connect classroom theory with current industry challenges, and have exposure to the latest technologies. Opportunities to converse and interact with a large pool of talented experienced department members  provided a deeper insight to the overall operation, as well as providing a valuable pool of resources to assist in completion of internship program. This internship program was exactly what I needed to nurture the lack of practical skills I had. I would acquire practical experience to complement the theoretical content of my studies.
-\item \textbf{Theoretical Knowledge}: During my internship period at NWSC ,I was able to  upgrade my theoretical knowledge,from the courseunit  of  Computer Networks in the classroom for example Microsoft windows server 2016, DNS ,DHCP ,IIS ,FTP and Active directory domain service.
+  \item \textbf{Work Ethics related Issue}: Internship is an opportunity to learn the skills and behaviors along with the work values that are required for success in the workplace. Workplace ethics are established codes of conduct that reflect the values of the organization or company where you are employed. I was able to possess the willingness to work hard for my supervisor during my internship period. In addition to working hard it is also important to work smart. This means I acquired the most efficient way to complete tasks and finding ways to save time while completing daily assignments. It's also important to care about my job and complete all projects while maintaining a positive attitude.
+\item \textbf{Practical Skills}: The Internship gave me  the opportunity to connect classroom theory with current industry challenges, and have exposure to the latest technologies. Opportunities to converse and interact with a large pool of talented experienced department members  provided a deeper insight to the overall operation, as well as providing a valuable pool of resources to assist in completion of internship program. This internship program was exactly what I needed to nurture the lack of practical skills I had. I would acquire practical experience to complement the theoretical content of my studies.
+\item \textbf{Theoretical Knowledge}: During my internship period at NWSC ,I was able to  upgrade my theoretical knowledge,from the course unit  of  Computer Networks in the classroom for example Microsoft windows server 2016, DNS ,DHCP ,IIS ,FTP and Active directory domain service.
   \item \textbf{Time Management}:  I learnt how to be punctual. NWSC is a busy organization and work had to be done as early as possible arrival time was 7:30am.
 \item \textbf{Communication Skills} : I improved on my  communication skills in a formal and informal way. In the formal way as I had to communicate with my supervisor, staff and interacting with people while providing user support.
 \item \textbf{Internet Research Skills} : I greatly improved my research skills as most of the things learnt i had to get more knowledge about them so I used a great deal of websites to acquire more knowledge by researching on them.
 \item \textbf{Team Work} : I worked with fellow interns in teams on tasks assigned such as the IT stock taking exercise where we had to record the different devices owned by NWSC for example mice, keyboards, laptops,system units,switches,routers and so many others by recording the serial number, make, status and the user. At the end of the exercise we had to come up with a report. 
-\item \textbf{Data Entry}: I improved my skills in data entry using software packages like Excel while analyzing data collected from stock taking exercise as well as creating different mail groups and entering data for example a mailgroup for Kampala Water Finance and Administration,KW branch engineers,KW commercial officers, KW commercial assistants, KW Branch Managers.
-\item \textbf{Knowledge of the Organisation}: I gained knowledge on the operations of NWSC; and the overall staff conduct and guidelines through orientation which took place in the first week at NWSC IREC.
+\item \textbf{Data Entry}: I improved my skills in data entry using software packages like Excel while analyzing data collected from stock taking exercise as well as creating different mail groups and entering data for example a mail group for Kampala Water Finance and Administration,Kampala Water branch engineers,Kampala Water commercial officers, Kampala Water commercial assistants, Kampala Water Branch Managers.
+\item \textbf{Knowledge of the Organization}: I gained knowledge on the operations of NWSC; and the overall staff conduct and guidelines through orientation which took place in the first week at NWSC International Resource Centre.
 \item User Support.
 \item Network printer Installation.
 \item Software Installation.
@@ -575,55 +558,55 @@ While at NWSC, I had several interesting experiences during my internship. The m
 \item Making New Connections : I also made new contacts with people already working at NWSC. These contacts hence forth create vital network of mentors, who I can look up to for guidance and help.I also made new friends with fellow interns and I was also able to learn something new from them.
 \item Learnt new Skills and Experiences: The opportunity to learn new skills and knowledge was exciting for example the important skills needed in a work environment.This will be of great importance in the future.
 \end{itemize}
-\subsection{Relatedness of University’s taught programmes to the Field work}
+\subsection{Relatedness of University's taught programmes to the Field work}
 Despite the fact that much of the theory we acquire in class,is not directly applied at work, there is a  relationship  of what is taught from Year 1 through Year 3 at the University.
 \par Course units like Communication skills are so crucial in the real work life as we demonstrated
-our team work, listening, speaking, and writing skills while at NWSC in different scenarios.  Research methodology greatly helped to research effectively and thereby come up with literature like this very report and also through tools like latex that we were stressed to use in writing reports while doing Rserch Methodology courseunit.
+our team work, listening, speaking, and writing skills while at NWSC in different scenarios.  Research methodology greatly helped to research effectively and thereby come up with literature like this very report and also through tools like latex that we were stressed to use in writing reports while doing Research Methodology course unit.
 \par Many of the university programmes require one to be  patient,committed,have discipline
 and integrity. This is evidenced while at the work environment as well.
 \par There is a close relationship between the programs taught at university and fieldwork, an example of the course units that exhibited the most relevance include:
 \begin{itemize}
 \item Computer Literacy: Computer skills were very vital as all tasks at NWSC were computerized; therefore computer literacy is a must for every intern.
 \item Communication skills: These skills were very important during the field attachment; I had to listen to the instructions given to me by my supervisor and also communicating with staff at the corporation.
-\item Research methodology: This course content helped I in preparing reports especially this report, I applied the
+\item Research methodology: This course content helped me in preparing reports especially this report, I applied the
 methods of data collection especially in the IT stock taking exercise that I was involved in.
 \end{itemize}
 \subsection{Challenges faced and how managed}
 \subsubsection{Individual Challenges}
 \begin{itemize}
-\item Financial constraint especially meals that were costly and were not provided by the organization. This led to high daily expenses.Managed this by packing some snacks from home to reduce on the expenses.
-\item Heavy rain that would at times incovenience my arrival time.
+\item Financial constraint especially meals that were costly and were not being  provided by the organization. This led to high daily expenses.Managed this by packing some snacks from home to reduce on the expenses.
+\item Heavy rain that would at times inconvenience my arrival time.
 \end{itemize}
 \subsubsection{Organizational Factors}
 \begin{itemize}
 \item High ranking officers who were so tough not allowing interns to work on their laptops by complaining whenever interns were sent to work on their issues.
 \item Some users were impatient when some computers were being worked on.
-\item Biometric system that needed ones thumb print to be in the system inorder to access the Office. This gave me hard time especially when i would come abit earlier than my supervisors.This was solved by my supervisor giving us user IDs and pincodes so that we are able to access the Office without any inconvenience of waiting for someone to come and put their thumbprint.
+\item Bio-metric system that needed ones thumb print to be in the system in-order to access the Office. This gave me hard time especially when i would come  earlier than my supervisors.This was solved by my supervisor giving us user IDs and pin-codes so that we are able to access the Office without any inconvenience of waiting for someone to come and put their thumbprint.
 \end{itemize}
 \subsection{Benefits derived from Field Attachment}
 \begin{itemize}
 \item Improved appreciation of the course: I worked under the supervision of Senior Systems Administrator as this is one of the prospective professions for a student of Computer Science, I got to understand the available professions for a graduate of this course and hence its applicability in the real world.
-\item Gained exposure to the demands and challenges of the workplace: The exposure to the organizational culture of The Corporation and the tasks given to me gave me great exposure to the demands and challenges of the workplace.
+\item Gained exposure to the demands and challenges of the workplace: The exposure to the organizational culture of the Corporation and the tasks given to me gave me great exposure to the demands and challenges of the workplace.
 \item Practical experiences: I also got a chance to apply the theory taught in class. This helped me get a clear concept through understanding its applicability in the real world.
-\item New knowledge and skills acquired: I acquired new knowledge and skills while on field attachment; Knowledge on the operations of NWSC through the orientation exercise where we had different presenations about the history of NWSC, Water Supply, Sewage, Call centre Operations and so many others.
+\item New knowledge and skills acquired: I acquired new knowledge and skills while on field attachment; Knowledge on the operations of NWSC through the orientation exercise where we had different presentations about the history of NWSC, Water Supply, Sewage, Call center Operations and so many others.
 \end{itemize}
 \subsection{Career Motivation}
 I must say that the I am encouraged that I took the right career path right from the day I decided to do  a degree in Computer Science that would lead me to the future of my life as an IT specialist. I affirm that I have been able to acquire several job
 required skills both at the university and at NWSC IT department  and I am highly motivated by this
-fact.I was able to interact with my supervisor and several other collegues in the IT department that gave me different advise about different paths I can take in the IT field and the different certifications i can do inorder to become a Systems Administrator.
+fact.I was able to interact with my supervisor and several other colleagues in the IT department that gave me different advise about different paths I can take in the IT field and the different certifications i can do in-order to become a Systems Administrator.
 \newpage
 \section{Conclusion and Recommendations}
 \subsection{Conclusion}
-After going through the whole period of internship as an intern I’ve observed so many professional activities and learnt as well. This internship was very fruitful to me because I was able  to cover many different fields. I also learnt new concepts and new ways of working.
+After going through the whole period of internship as an intern I've observed so many professional activities and learnt as well. This internship was very fruitful to me because I was able  to cover many different fields. I also learnt new concepts and new ways of working.
 \par The compulsory supervised industrial attachment of the University gives us  students  the opportunity to apply knowledge in real work, exposing us to work methods not taught at university. The program provides access to products and equipment not available in the university, as well as assessing our interest in the occupations we plan to undertake.To my understanding, the program has served its purpose to my academic progress and industrial practice.
 \par NWSC  is a very good and favorable environment for internship full of lots of new information technology practical aspects that are essential with the modern digital technology. The place is well organized and suitable for trainees who are willing to learn.
-\par To conclude, I think that this internship was very beneficial to me as I learnt a lot, and it made me discover work in a real world.
+\par To conclude, I think that this internship was very beneficial to me as I learnt alot, and it made me discover work in a real world.
 \subsection{Recommendations}
 This is my first industrial training/internship in my university and I strongly recommend that;
 \begin{itemize}
 \item The university should establish partnership with organizations so that they can secure internship placements for students.
 \item The different departments and faculties in the university should look for internship places for the students because some of the students panic and cannot settle or concentrate because they have failed to get companies to work with.
-\item The University should continue supporting the field attachment program as it comes with benefits to the University and the Students. The University should also consider making field attachment when the students are through with third year during that time before graduation  as this makes them have wider chances if opportunities come along and also increases on their work experience which would be helpful while applying for jobs as most jobs require work experience.
+\item The University should continue supporting the field attachment program as it comes with benefits to the University and the Students. The University should also consider making field attachment when the students are through with third year during that time before graduation  as this makes them have wider chances just incase opportunities come along and also improves on their work experience which would be helpful while applying for jobs as most jobs require work experience.
 \end{itemize}
 \newpage
 \section{Appendix}
